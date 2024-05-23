@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Link Tostfy-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <!--Link Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Acaraje Bahia"/>
+    <meta property="og:desciption" content="Melhor Acarajé de Portugal."/>
+    <meta property="og:site_name" content="AcarajeBahia"/>
+
+
+    <!--Link tailwind css-->
+    <link rel="stylesheet" href="/Css/output.css" />
+
+
+    <title>Acarajé Bahia</title>
+</head>
+
+<body>
+    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+        <div class="w-full h-full flex flex-col justify-center items-center">
+            <img src="/Assests/bg.jpeg" alt="Logo"
+                class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200">
+            <h1 class="text-3xl mt-4 mb-2 font-bold text-white">Acarajé da Bahia</h1>
+
+            <span class="text-white font-medium">Rua João da Cruz Viegas, 52 Fontainhas/Cascais</span>
+
+            <div class="bg-green-500 px-4 py-1 rounded-lg mt-5" id="data-span">
+                <span>Seg á Dom - 08:00 ás 22:00</span>
+            </div>
+        </div>
+    </header>
+
+    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6 ">Conheça nosso menu</h2>
+
+    <div id="menu">
+
+        <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-20">
+            <!--Inicio produto-->
+            <div class="flex gap-2">
+                <img src="/Assests/acaraje.jpg" alt="Acarajé"
+                    class="w-28 h-28 rounded-md hover:rotate-2 duration-300" />
+
+                <div class="w-80">
+                    <p class="font-bold">Acarajé</p>
+                    <p class="text-sm">Bolinha de massa de feijão fradinho, cebola, sal e outros temperos, frita no
+                        azeite de dendê. Pode ser simples ou recheada.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">6.00 €</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Acarajé"
+                            data-price="6.00 €">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--Fim produto-->
+
+            <!--Inicio produto-->
+            <div class="flex gap-2">
+                <img src="/Assests/abara.jpg" alt="Abará" class="w-28 h-28 rounded-md hover:rotate-2 duration-300">
+
+                <div class="w-80">
+                    <p class="font-bold">Abará</p>
+                    <p class="text-sm">Bolinho de feijão-fradinho moído cozido em banho-maria embrulhado em folha de
+                        bananeira.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">7.00 €</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Abará"
+                            data-price="7.00 €">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--Fim produto-->
+
+            <!--Inicio produto-->
+            <div class="flex gap-2">
+                <img src="/Assests/coxinha.jpg" alt="Coxinha" class="w-28 h-28 rounded-md hover:rotate-2 duration-300">
+
+                <div class="w-80">
+                    <p class="font-bold">Coxinha</p>
+                    <p class="text-sm">Coxinha de frango. Porção de 5 unidades </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">4.00 €</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Coxinha"
+                            data-price="4.00 €">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--Fim produto-->
+
+            <!--Inicio produto-->
+            <div class="flex gap-2">
+                <img src="/Assests/bolEstudante.jpg" alt="Bolinho de estudante"
+                    class="w-28 h-28 rounded-md hover:rotate-2 duration-300">
+
+                <div class="w-80">
+                    <p class="font-bold">Bolinho de estudante</p>
+                    <p class="text-sm">doce feito de massa de tapioca, frito com coco, açúcar e canela</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">1.50 €</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Bolinho de estudante"
+                            data-price="1.50 €">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--Fim produto-->
+
+            <!--Inicio produto-->
+            <div class="flex gap-2">
+                <img src="/Assests/bolinhaPizza.jpg" alt="Bolinha de pizza"
+                    class="w-28 h-28 rounded-md hover:rotate-2 duration-300">
+
+                <div class="w-80">
+                    <p class="font-bold">Bolinha de pizza</p>
+                    <p class="text-sm">Porção de 5 unidades.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">4.50 €</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Bolinha de pizza"
+                            data-price="4.50 €">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--Fim produto-->
+
+            <!--Inicio produto-->
+            <div class="flex gap-2">
+                <img src="/Assests/bolinhaQueijo.JPG" alt="Bolinha de queijo"
+                    class="w-28 h-28 rounded-md hover:rotate-2 duration-300">
+
+                <div class="w-80">
+                    <p class="font-bold">Bolinha de queijo</p>
+                    <p class="text-sm">Porção de 5 unidades.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">4.50 €</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Bolinha de queijo"
+                            data-price="4.50 €">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--Fim produto-->
+
+            <!--Inicio produto-->
+            <div class="flex gap-2">
+                <img src="/Assests/paozinho.JPG" alt="Pãozinho"
+                    class="w-28 h-28 rounded-md hover:rotate-2 duration-300">
+
+                <div class="w-80">
+                    <p class="font-bold">Pãozinho</p>
+                    <p class="text-sm">Porção de 6 unidades.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">5.50 €</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Pãozinho"
+                            data-price="5.50 €">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--Fim produto-->
+
+            <!--Inicio produto-->
+            <div class="flex gap-2">
+                <img src="/Assests/quibe.JPG" alt="Quibe de queijo"
+                    class="w-28 h-28 rounded-md hover:rotate-2 duration-300">
+
+                <div class="w-80">
+                    <p class="font-bold">Quibe de queijo</p>
+                    <p class="text-sm">Porção de 5 unidades.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">4.50 €</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Quibe de queijo"
+                            data-price="4.50 €">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--Fim produto-->
+
+            <!--Inicio produto-->
+            <div class="flex gap-2">
+                <img src="/Assests/pudin.jpg" alt="Pudim" class="w-28 h-28 rounded-md hover:rotate-2 duration-300">
+
+                <div class="w-80">
+                    <p class="font-bold">Pudim</p>
+                    <p class="text-sm"></p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">2.00 €</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Pudim" data-price="2.00 €">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--Fim produto-->
+
+            <!--Inicio produto-->
+            <div class="flex gap-2">
+                <img src="/Assests/brigadeiro.JPG" alt="Brigadeirão"
+                    class="w-28 h-28 rounded-md hover:rotate-2 duration-300">
+
+                <div class="w-80">
+                    <p class="font-bold">Brigadeirão</p>
+                    <p class="text-sm"></p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">1.50 €</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Brigadeirão"
+                            data-price="1.50 €">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--Fim produto-->
+
+        </main>
+
+        <div class="mx-auto max-w-7xl px-2 my-2">
+            <h2 class="font-bold text-3xl">
+                Bebidas
+            </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16"
+            id="menu">
+
+            <!--Inicio produto-->
+            <div class="flex gap-2">
+                <img src="/Assests/cola.jpeg" alt="Coca-Cola" class="w-28 h-28 rounded-md hover:rotate-2 duration-300">
+
+                <div class="w-80">
+                    <p class="font-bold">Coca-Cola</p>
+                    <p class="text-sm">Descriçao</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">1.60 €</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Coca-Cola"
+                            data-price="1.60 €">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--Fim produto-->
+
+            <!--Inicio produto-->
+            <div class="flex gap-2">
+                <img src="/Assests/frize.jpg" alt="Frize" class="w-28 h-28 rounded-md hover:rotate-2 duration-300">
+
+                <div class="w-80">
+                    <p class="font-bold">Frize</p>
+                    <p class="text-sm">Vários sabores</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">1.20 €</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Frize" data-price="1.20 €">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--Fim produto-->
+
+            <!--Inicio produto-->
+            <div class="flex gap-2">
+                <img src="/Assests/iceTea.jpg" alt="Ice Tea" class="w-28 h-28 rounded-md hover:rotate-2 duration-300">
+
+                <div class="w-80">
+                    <p class="font-bold">Ice Tea</p>
+                    <p class="text-sm">Vários sabores</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">1.60 €</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Ice Tea"
+                            data-price="1.60 €">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--Fim produto-->
+
+            <!--Inicio produto-->
+            <div class="flex gap-2">
+                <img src="/Assests/agua.jpg" alt="Água" class="w-28 h-28 rounded-md hover:rotate-2 duration-300">
+
+                <div class="w-80">
+                    <p class="font-bold">Água</p>
+                    <p class="text-sm">Poder escolher com gás e sem gás</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">1.10 €</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Água" data-price="1.10 €">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Fim produto-->
+            <!--Inicio produto-->
+            <div class="flex gap-2">
+                <img src="/Assests/heineken.jpg" alt="Heineken"
+                    class="w-28 h-28 rounded-md hover:rotate-2 duration-300">
+
+                <div class="w-80">
+                    <p class="font-bold">Cerveja Heineken</p>
+                    <p class="text-sm">Garrafa de 330 ml</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">1.80 €</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Cerveja Heineken"
+                            data-price="1.80 €">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Fim produto-->
+            <!--Inicio produto-->
+            <div class="flex gap-2">
+                <img src="/Assests/superBook.JPG" alt="Cerveja SuperBock"
+                    class="w-28 h-28 rounded-md hover:rotate-2 duration-300">
+
+                <div class="w-80">
+                    <p class="font-bold">Cerveja SuperBock</p>
+                    <p class="text-sm">Garrafa de 330 ml</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">1.10 €</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Cerveja SuperBock"
+                            data-price="1.30 €">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Fim produto-->
+            <!--Inicio produto-->
+            <div class="flex gap-2">
+                <img src="/Assests/sagres.jpg" alt="Cerveja Sagres"
+                    class="w-28 h-28 rounded-md hover:rotate-2 duration-300">
+
+                <div class="w-80">
+                    <p class="font-bold">Cerveja Sagres</p>
+                    <p class="text-sm">Garrafa de 330 ml</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">1.30 €</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Cerveja Sagres"
+                            data-price="1.30 €">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Fim produto-->
+            <!--Inicio produto-->
+            <div class="flex gap-2">
+                <img src="/Assests/caipirinha.jpg" alt="Caipirinha"
+                    class="w-28 h-28 rounded-md hover:rotate-2 duration-300">
+
+                <div class="w-80">
+                    <p class="font-bold">Caipirinha</p>
+                    <p class="text-sm">Descriçao</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">5.00 €</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Caipirinha"
+                            data-price="5.00 €">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Fim produto-->
+            <!--Inicio produto-->
+            <div class="flex gap-2">
+                <img src="/Assests/roscaMorango.jpg" alt="Rosca Morango"
+                    class="w-28 h-28 rounded-md hover:rotate-2 duration-300">
+
+                <div class="w-80">
+                    <p class="font-bold">Rosca Morango</p>
+                    <p class="text-sm">Descriçao</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">5.00 €</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Rosca Morango"
+                            data-price="5.00 €">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Fim produto-->
+            <!--Inicio produto-->
+            <div class="flex gap-2">
+                <img src="/Assests/sangria.jpg" alt="Sangria" class="w-28 h-28 rounded-md hover:rotate-2 duration-300">
+
+                <div class="w-80">
+                    <p class="font-bold">Sangria</p>
+                    <p class="text-sm">400 ml</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">2.00 €</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Sangria"
+                            data-price="2.00 €">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Fim produto-->
+        </div>
+    </menu>
+
+        <!--Modal-->
+        <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden overflow-auto"
+            id="cart-modal">
+            <div class="bg-white p-5 rounded-md min-w-[90%] md:w-[500px]">
+
+                <h2 class="text-center font-bold text-2xl m-2">Meu carrinho</h2>
+
+                <div id="cart-itens" class="flex justify-between mb-2 flex-col"></div>
+
+                <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+
+                <p class="font-bold">Endereço de entrega:</p>
+                <input type="text" placeholder="Digite seu endereço completo..." id="adress"
+                    class="w-full border-2 p-1 rounded my-1" />
+                <p class="text-red-500 hidden" id="adress-warn">Digite seu endereço completo</p>
+
+                <div class="flex items-center justify-between mt-5 w-full">
+                    <button id="close-modal-btn">Fechar</button>
+                    <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar
+                        pedido</button>
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="w-full bg-red-500 py-2 fixed bottom-0 z-40 flex items-center justify-center">
+            <button class="flex items-center gap-2 font-bold text-white" id="cart-btn">
+                (<span id="cart-count">0</span>)
+                Veja seu carrinho
+                <i class="fa fa-cart-plu text-lg text-white"></i>
+            </button>
+        </footer>
+
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+        <script src="/Js/script.js"></script>
+</body>
+
+</html>
